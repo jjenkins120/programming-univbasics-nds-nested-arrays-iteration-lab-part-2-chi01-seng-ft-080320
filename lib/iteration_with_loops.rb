@@ -20,4 +20,3 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
   end
 end
 
-p outer_results
