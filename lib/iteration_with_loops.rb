@@ -7,13 +7,14 @@ def find_min_in_nested_arrays(array_of_daily_temperatures)
   while row_index < array_of_daily_temperatures.count do
     element_index = 0
     lowest_temperatures = 100
-    #problem here because variable has to have a value
+    
     while element_index < array_of_daily_temperatures[row_index].count do
-      if array_of_daily_temperatures[row_index][element_index] < lowest_temperatures
+      if array_of_daily_temperatures[row_index][element_index] <= lowest_temperatures
         lowest_temperatures = array_of_daily_temperatures[row_index][element_index]
       end
       element_index += 1
     end
+    
     outer_results << lowest_temperatures
     row_index += 1
   end
